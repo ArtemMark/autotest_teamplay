@@ -5,12 +5,12 @@ Library     SeleniumLibrary
 *** Variables ***
 # Локаторы и ссылки
 
-${URL}=                 https://example.com/
+${URL}=                 http://shop.bugred.ru
 ${BROWSER}=             Chrome
 ${SCREEN_NAME}=         {index}.png
 
-${Local_Submit}=        css=[data-test="submit"]
-
+${Local_Submit}=        css=form > button[type="submit"]
+${Local_Serch}=         css=input[aria-label="Search"]
 
 
 *** Keywords ***
